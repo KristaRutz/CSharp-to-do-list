@@ -6,7 +6,7 @@ namespace todolist.Models
     public class Item
     {
 
-        public string Description { get; }
+        public string Description { get; set; }
         public static List<Item> _instances = new List<Item>();
         public Item() { }
         public Item(string description)
