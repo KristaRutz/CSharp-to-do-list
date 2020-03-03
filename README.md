@@ -1,21 +1,12 @@
-# Typing Game
+# ToDoList
 
-#### A typing speed game, 02.20.2020\_
+#### An Errands Organizer, 03.03.2020\_
 
-#### By _**Andrew Philpott, Sasa Schwartz, Jiwon Han, Jack Dunning**_
+#### By _**Andrew Philpott, Krista Rutz**_
 
 ## Description
 
-This application allows you to see how fast you're typing, as well as race against your friends. You are provided with 100 words worth of dad jokes as you type. As you type, the text will shift and change color to display which letters you typed correctly and incorrectly. You can correct your errors within a word, but once you complete a word you can't go back! When you finish typing, the game will display your words per minute, characters per minute, and number of errors.
-
-## General division of responsibilities
-
-- Andrew: Class construction for Game and Player files, CSS styling
-- Sasa: Event listeners and handlers, dynamic positioning and color-coding of text display
-- Jack: Jest testing, HTML construction, traffic light animation
-- Jiwon: API utilization, visual interactive keyboard
-
-  Team members contributed beyond their areas of responsibility. The areas listed above outline the largest contributors in each part of the project.
+This application allows you to add and keep track of different errands.
 
 ## Specs
 
@@ -29,11 +20,16 @@ This application allows you to see how fast you're typing, as well as race again
   - Input: new Item("Walk the dog.")
   - Output: Item Description: "Walk the dog."
 
+  - _Spec: A list of all the items should be maintained._
+
+  - Input: new Item("Walk the dog."), new Item("Go to grocery store")
+  - Output: List: Item("Walk the dog."), Item("Go to grocery store")
+
 ## Setup/Installation Requirements
 
 - Clone this repository.
-- \$ npm install
-- \$ npm run start
+- \$dotnet restore in tests
+- \$dotnet build in main
 
 ## Known Bugs
 
@@ -45,14 +41,11 @@ This application allows you to see how fast you're typing, as well as race again
 
 ## Technologies Used
 
-- Html
-- CSS
-- JavaScript
-- Babel
-- Dad Jokes API
+- C#
+- .NET Core 2.2
 
 ### License
 
-Copyright (c) 2020 **_Andrew Philpott, Sasa Schwartz, Jiwon Han, Jack Dunning_**
+Copyright (c) 2020 **_Andrew Philpott, Krista Rutz_**
 
 _This software is licensed under the MIT license._
