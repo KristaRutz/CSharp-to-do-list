@@ -20,10 +20,10 @@ This application allows you to add and keep track of different errands.
   - Input: new Item("Walk the dog.")
   - Output: Item Description: "Walk the dog."
 
-  - _Spec: A list of all the items should be maintained._
+    - _Spec: Item List should be created with an empty list._
 
-  - Input: new Item("Walk the dog."), new Item("Go to grocery store")
-  - Output: List: Item("Walk the dog."), Item("Go to grocery store")
+  - Input: No items created get List
+  - Output: returns empty list
 
 ## Setup/Installation Requirements
 

@@ -5,6 +5,7 @@ namespace todolist.Models
 
     public class Item
     {
+
         public string Description { get; }
         public static List<Item> _instances = new List<Item>();
         public Item() { }
@@ -18,5 +19,9 @@ namespace todolist.Models
             return _instances;
         }
 
+        public static void ClearAll()
+        {
+            _instances.Clear();
+        }
     }
 }

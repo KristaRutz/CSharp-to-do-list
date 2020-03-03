@@ -1,12 +1,17 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
 using todolist.Models;
+using System;
 
 namespace todolist.tests
 {
     [TestClass]
-    public class ItemTests
+    public class ItemTests : IDisposable
     {
+        public void Dispose()
+        {
+            Item.ClearAll();
+        }
 
         [TestMethod]
         public void ItemConstructor_CreateInstanceOfItem_Item()
