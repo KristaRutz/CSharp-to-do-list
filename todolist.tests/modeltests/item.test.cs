@@ -51,8 +51,8 @@ namespace todolist.tests
         [TestMethod]
         public void GetAll_ReturnsItems_ItemList()
         {
-            string description01 = "Walk the dog";
-            string description02 = "Wash the dishes";
+            string description01 = "Walk the dog.";
+            string description02 = "Do the dishes";
             Item newItem1 = new Item(description01);
             Item newItem2 = new Item(description02);
             List<Item> newList = new List<Item> { newItem1, newItem2 };
