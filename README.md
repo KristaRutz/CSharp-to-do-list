@@ -19,10 +19,15 @@ This application allows you to see how fast you're typing, as well as race again
 
 ## Specs
 
-- _Spec: ._
+- _Spec: Item constructor should be able to make an item._
 
-  - Input:
-  - Output:
+  - Input: new Item()
+  - Output: Item
+
+  - _Spec: An item should be created with a description when a string is passed into the item constructor._
+
+  - Input: new Item("Walk the dog.")
+  - Output: Item Description: "Walk the dog."
 
 ## Setup/Installation Requirements
 
