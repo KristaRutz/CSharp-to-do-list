@@ -1,4 +1,4 @@
-namespace todolist
+namespace todolist.Models
 {
 
     public class Item
