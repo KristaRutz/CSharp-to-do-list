@@ -1,12 +1,12 @@
 # ToDoList
 
-#### An Errands Organizer, 03.03.2020\_
+#### An Errands Organizer, 03.10.2020\_
 
-#### By _**Andrew Philpott, Krista Rutz**_
+#### By _**Steven Fleming, Krista Rutz, Andrew Philpott**_
 
 ## Description
 
-This application allows you to add and keep track of different errands.
+This application allows you to add and keep track of different errands. Master branch contains webapp and console_app branch contains the console version.
 
 ## Specs
 
