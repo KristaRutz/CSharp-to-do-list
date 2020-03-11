@@ -1,6 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
-using todolist.Models;
+using ToDoList.Models;
 using System;
 
 namespace todolist.tests
@@ -16,7 +16,7 @@ namespace todolist.tests
         [TestMethod]
         public void ItemConstructor_CreateInstanceOfItem_Item()
         {
-            Item newItem = new Item();
+            Item newItem = new Item("test");
             Assert.AreEqual(typeof(Item), newItem.GetType());
         }
 
@@ -58,6 +58,36 @@ namespace todolist.tests
             List<Item> newList = new List<Item> { newItem1, newItem2 };
             List<Item> result = Item.GetAll();
             CollectionAssert.AreEqual(newList, result);
+        }
+
+        [TestMethod]
+        public void GetId_ItemsInstantiateWithAnIdAndGetterReturns_Int()
+        {
+            //Arrange
+            string description = "Walk the dog.";
+            Item newItem = new Item(description);
+            //Act
+            int result = newItem.Id;
+            //Assert
+            Assert.AreEqual(1, result);
+        }
+
+        [TestMethod]
+        public void Find_ReturnsCorrectItem_Item()
+        {
+        //Arrange
+            string description01 = "Walk the dog";
+            string description02 = "Wash the dishes";
+            Item newItem1 = new Item(description01);
+            Item newItem2 = new Item(description02);
+
+            //Act
+            Item result1 = Item.Find(1);
+            Item result2 = Item.Find(2);
+
+            //Assert
+            Assert.AreEqual(newItem1, result1);
+            Assert.AreEqual(newItem2, result2);
         }
 
     }
